@@ -6,7 +6,6 @@ them all safely across a river.
 
 ![alice swimming](/images/storytelling.gif)
 
-
 The rules for this puzzle are:
 
 - You must get the fox, goose, and bag of corn safely across the other side of the river

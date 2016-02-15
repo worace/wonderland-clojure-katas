@@ -14,6 +14,14 @@
         (is (contains? (set diffs) :you)))
       step2)))
 
+(deftest test-obvious-valid-move
+  (validate-move #{:fox :goose :you :corn}
+                 #{:fox :goose}))
+
+(deftest test-validating-safe-positions
+  (is (safe-position? [:corn :you]))
+  (is (not (safe-position? [:fox :goose]))))
+
 (deftest test-river-crossing-plan
   (let [crossing-plan (map (partial map set) (river-crossing-plan))]
     (testing "you begin with the fox, goose and corn on one side of the river"
